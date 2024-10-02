@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desilicious</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header bg--dark">
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="./IMG/81240106-logo1.png" alt="logo" class="header__logo" />
+          <ul class="header__nav">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./chef.html">Chefs</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTACT -->
+    <section class="contact bg--primary py--8">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="top">
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i></li>
+              <li>407-509-3646</li>
+            </ul>
+            <ul>
+              <li><i class="fa-sharp-duotone fa-solid fa-location-dot"></i></li>
+              <li>4148 Rose Avenue, New Orleans,LA,<br />Louisiana, 70114</li>
+            </ul>
+            <ul>
+              <li><i class="fa-solid fa-earth-americas"></i></li>
+              <li>contact@rentals.com</li>
+            </ul>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152395.56896793353!2d121.25300420528818!3d14.055690419489256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5c96860a894b%3A0xfa9e0f05004f4aca!2sSan%20Pablo%20City%2C%20Laguna!5e1!3m2!1sen!2sph!4v1727826273772!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div class="title">
+            <h2>Get In Touch</h2>
+            <p>Make it happens in 4 easy! Best Of Luck</p>
+          </div>
+
+          <form action="contact__content">
+            <div class="first">
+              <div class="name">
+                <label for="">First Name</label>
+                <input type="text" />
+              </div>
+              <div class="name">
+                <label for="">Last Name</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="second">
+              <label for="">Email</label> 
+              <input type="text" />
+            </div>
+            <div class="second">
+              <label for="">Subject</label> 
+              <input type="text" />
+            </div>
+            <div class="third">
+              <label for="">Your message</label>
+              <textarea name="Message" id=""></textarea>
+            </div>
+            <a href="" class="btn bg--secondary">Submit Form</a>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg--dark pt--5 pb--2">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul>
+            <li><img src="./IMG/81240106-logo1.png" alt="" /></li>
+            <li><span>Phone :</span> 407-509-3646</li>
+            <li><span>Mail: </span>delicia@support.com</li>
+            <li><span>Address: </span>Brgy. San Ignacio SPC Laguna</li>
+          </ul>
+          <div class="footer__details">
+            <ul>
+              <li><h4 class="mb--2">Useful Link</h4></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Food Menu</a></li>
+              <li><a href="">My account</a></li>
+              <li><a href="">List Item</a></li>
+            </ul>
+            <ul>
+              <li><h4 class="mb--2">Community</h4></li>
+              <li><a href="">Map</a></li>
+              <li><a href="">Store Location</a></li>
+              <li><a href="">Photography</a></li>
+              <li><a href="">Games</a></li>
+              <li><a href="">MUsic</a></li>
+            </ul>
+          </div>
+          <div class="footer__lastpart">
+            <h4 class="mb--2">Community</h4>
+            <div class="footer__subs">
+              <input type="text" placeholder="Your Email Address" />
+              <a href="" class="btn bg--footer">Subscribe</a>
+            </div>
+            <ul class="footer__social">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text--center mt--2">
+          © Copyright 2022. Powered by Diwata Pares
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/toggle_menu.js"></script>
+  </body>
+</html>

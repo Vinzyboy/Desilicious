@@ -1,0 +1,18 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.Menu {
+  @include centerAll;
+  flex-direction: column;
+  &__wrapper {
+    @include evenGrid(2, 1rem);
+    justify-items: center;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+    }
+    img {
+      border-radius: 2rem;
+      @include imgFit(80%, 30rem);
+    }
+  }
+}

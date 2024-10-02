@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desilicious</title>
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -20,14 +29,19 @@
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- BANNER -->
-    <section class="homeBanner bg--dark">
+    <section class="homeBanner bg--dark" >
       <div class="container">
-        <div class="homeBanner__wrapper">
+        <div class="homeBanner__wrapper" data-aos="fade-up-right">
           <h4>IRRESISTIBLY GOOD</h4>
           <h1>THe Rich Taste of Indian Food</h1>
           <p class="mb--3">
@@ -44,7 +58,7 @@
     </section>
 
     <!--  HOME MENU-->
-    <section class="homeMenu bg--primary py--5">
+    <section class="homeMenu bg--primary py--5" >
       <div class="container">
         <div class="title">
           <h2>Delicia Special Menu</h2>
@@ -53,8 +67,8 @@
             dishes <br />that we prepare with love
           </p>
         </div>
-        <div class="homeMenu__wrapper">
-          <div class="homeMenu__card">
+        <div class="homeMenu__wrapper" data-aos="zoom-in">
+          <div class="homeMenu__card" >
             <img src="./IMG/rice.png" alt="" />
             <div class="homeMenu__card--details">
               <h4>The Rice Menu</h4>
@@ -211,6 +225,90 @@
     </section>
 
     <!-- HOME TESTIMONIAL -->
+    <section class="homeTestimonial bg--primary pb--5">
+      <div class="container">
+        <div class="homeTestimonial__wrapper">
+          <div class="homeTestimonial__slider">
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Kulentang Kokoks</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Junjun Batumbakal</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Ernesto Hindimapatumba</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Billy Eyelashes</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Jejomar Marjejo</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+            <div class="homeTestimonial__client">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>
+                “Delicia is my favorite place in the world to have authentic
+                Indian food and fill myself with quality ingredients, herbs, and
+                spices, and get the truest taste. I have not had Indian food so
+                good anywhere else in the entire country and I keep coming back
+                every time. It is absolutely DELICIOUS!”
+              </p>
+              <h4>Bryan Maligaya</h4>
+              <small>A regular customer at Delicia</small>
+            </div>
+          </div>
+        </div>
+        <div class="homeTestimonial__controls" id="controls">
+          <a class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+          <a class="next"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
 
     <!-- HOME VIDEO -->
     <section class="homeVideo bg--primary py--5">
@@ -230,16 +328,15 @@
       </div>
     </section>
 
-    <!-- BLOG -->
+    <!--HOME BLOG -->
     <section class="homeBlog bg--primary py--5">
       <div class="container">
         <div class="title">
           <h2>From our Blog</h2>
           <p>
             Keep up with our latest food trend, new items, and other updates and
-            news from <br>
-            our fun blogs and articles that explore the world of
-            Indian cuisine.
+            news from <br />
+            our fun blogs and articles that explore the world of Indian cuisine.
           </p>
         </div>
         <div class="homeBlog__wrapper">
@@ -285,5 +382,68 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg--dark pt--5 pb--2">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul>
+            <li><img src="./IMG/81240106-logo1.png" alt="" /></li>
+            <li><span>Phone :</span> 407-509-3646</li>
+            <li><span>Mail: </span>delicia@support.com</li>
+            <li><span>Address: </span>Brgy. San Ignacio SPC Laguna</li>
+          </ul>
+          <div class="footer__details">
+            <ul>
+              <li><h4 class="mb--2">Useful Link</h4></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Food Menu</a></li>
+              <li><a href="">My account</a></li>
+              <li><a href="">List Item</a></li>
+            </ul>
+            <ul>
+              <li><h4 class="mb--2">Community</h4></li>
+              <li><a href="">Map</a></li>
+              <li><a href="">Store Location</a></li>
+              <li><a href="">Photography</a></li>
+              <li><a href="">Games</a></li>
+              <li><a href="">MUsic</a></li>
+            </ul>
+          </div>
+          <div class="footer__lastpart">
+            <h4 class="mb--2">Community</h4>
+            <div class="footer__subs">
+              <input type="text" placeholder="Your Email Address" />
+              <a href="" class="btn bg--footer">Subscribe</a>
+            </div>
+            <ul class="footer__social">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text--center mt--2">
+          © Copyright 2022. Powered by Diwata Pares
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/toggle_menu.js"></script>
   </body>
 </html>

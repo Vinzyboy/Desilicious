@@ -1,0 +1,33 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.chef {
+  &__wrapper {
+    @include unevenGrid(1fr 1fr 1fr 1fr, 1rem);
+    place-content: center;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__card {
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid $clr--secondary;
+    }
+    img {
+      border-radius: 2rem;
+      width: 16rem;
+    }
+    &--details {
+      h4 {
+        font-size: 2rem;
+      }
+      p {
+        color: $clr--secondary;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -35,4 +35,18 @@
         border-radius: .3rem;
         width: fit-content;
     }
+    &.bg--footer{
+        @extend .btn;
+        padding: 0.2rem 2rem;
+        background-color: $clr--secondary;
+        border-radius: 2rem;
+        color: $clr--light;
+        font-weight: 600;
+        box-shadow:  rgba(231, 4, 4, 0.1) 0px 4px 12px;
+        &.hover{
+            background-color: $clr--light;
+            border: 1px solid $clr--secondary;
+            color: $clr--secondary;
+        }
+    }
 }
